@@ -12,7 +12,6 @@
 	&lt;script&gt;&lt;&frasl;script&gt;タグ内に<br>
 	JavaScriptのコードを書く</p>
 	<p id="CH02-1">うまく実行できればここに値が表示</p>
-
 	<h2>2.JavaScriptファイルに書く</h2>
 	<p>外部ファイルを作成し<br>
 		ファイル名「〇〇〇.js」を作成して<br>
@@ -24,12 +23,15 @@
 	<script>
 		// 1.HTMLファイル内にJavaScriptを書く
 		// ここにJavaScriptコードを書く
-		
+		const cal1 = 1 + 2;
+		console.log(cal1); // => 3
+		document.getElementById('CH02-1').textContent = cal1;
+
 
 	</script>
 
 	<!-- 2.JavaScriptファイルに書く -->
 	<!-- 外部ファイルを読み込む.JavaScriptファイルに書く -->
-	
+	<script src="./script.js"></script>
 </body>
 </html>
